@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Year-wise total amounts -->
+            <TextView
+                android:id="@+id/tvYearWiseTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year-wise Total Amounts"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <!-- List to display year-wise totals -->
+            <LinearLayout
+                android:id="@+id/yearWiseTotalLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+            </LinearLayout>
+
+            <!-- Month-wise total amounts -->
+            <TextView
+                android:id="@+id/tvMonthWiseTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Month-wise Total Amounts"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <!-- List to display month-wise totals -->
+            <LinearLayout
+                android:id="@+id/monthWiseTotalLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+            </LinearLayout>
+
+            <!-- Date-wise total amounts -->
+            <TextView
+                android:id="@+id/tvDateWiseTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date-wise Total Amounts"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <!-- List to display date-wise totals -->
+            <LinearLayout
+                android:id="@+id/dateWiseTotalLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

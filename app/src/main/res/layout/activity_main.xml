@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    android:padding="16dp"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/numberEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:hint="Enter number"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:maxLength="14"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_pack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_operator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp" />
+
+    <Spinner
+        android:id="@+id/spinner_operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numberEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:dropDownWidth="wrap_content"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_pack"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="128dp"
+        android:text="Save"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/mytransactions"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="128dp"
+        android:text="SHOW"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/storeButton"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="06dp"
+        android:text="STORE"
+        android:textSize="18sp" />
+</RelativeLayout>
